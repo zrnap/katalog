@@ -1,6 +1,16 @@
+:root {
+    /* colors; */
+    --dark1:  #0F0F0F;
+    --dark2:  #2D2E2E;
+    --light:  #F4D6CC;
+    --accent: #F4B860;
+}
+
 body{
     max-width: 960px;
     margin: auto;
+    background-color: var(--light);
+    color: var(--dark1);
 }
 
 header{
