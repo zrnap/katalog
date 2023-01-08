@@ -1,51 +1,106 @@
-:root {
-    /* colors; */
-    --dark1:  #0F0F0F;
-    --dark2:  #2D2E2E;
-    --light:  #F4D6CC;
+/* :root {
+    --dark1: #0F0F0F;
+    --dark2: #2D2E2E;
+    --light: #ededed;
     --accent: #F4B860;
-}
+} */
 
-body{
-    max-width: 960px;
+
+body {
+    max-width: 980px;
     margin: auto;
-    background-color: var(--light);
-    color: var(--dark1);
 }
 
-header{
-    padding: 1rem;
+/* Make images display in a grid on larger screens */
+@media (min-width: 768px) {
+    .image-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1rem;
+    }
 }
 
-.responsive{
-    padding: 0;
-    width: 100%;
+/* Make images display in one column on smaller screens */
+@media (max-width: 767px) {
+    .image-container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* Add some padding and style the project name and date */
+.projekt {
+    padding: 1em;
+}
+
+.project-name {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+.datum {
+    font-size: 1rem;
+    margin-bottom: 1em;
+}
+
+/* Style the images */
+.project-image {
+    max-width: 100%;
     height: auto;
+    border: 1px solid #ccc;
+    margin: 0.5rem 0 0.5rem 0;
+}
+
+/* Style image info */
+
+
+/* Add some padding and style the header */
+header {
+    padding: 1em;
 }
 
 .hl {
-    float: left;
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
 }
 
 .hr {
     float: right;
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
 }
 
-.karta{
-    padding: 1rem;
-    margin: auto;
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+.h-img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1em;
 }
 
-.karta .úvodník{
-    grid-column-end: -1;
+/* Add some padding and style the sections in the header */
+.MM-info,
+.úvodník {
+    padding: 1em;
 }
 
-.project-name{
-    /* display:grid;*/
-    grid-column: 1 / -1;
-    width: 100%;
-    margin: 0;
+.MM-info h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+.úvodník h3 {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+/* Add some padding to the main content */
+.main-content {
+    padding: 1em;
+}
+
+.big-p {
+    max-width: 452px;
 }
