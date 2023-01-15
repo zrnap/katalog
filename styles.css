@@ -9,6 +9,8 @@
 body {
     max-width: 980px;
     margin: auto;
+    font-family: 'Noto Sans Lao Looped', sans-serif;
+    font-weight: 300;
 }
 
 /* Make images display in a grid on larger screens */
@@ -34,22 +36,41 @@ body {
 }
 
 .project-name {
-    font-size: 1.2em;
-    font-weight: bold;
-    margin-bottom: 0.5em;
+    font-size: 1.5em;
+    font-weight: 400;
+    /* margin-bottom: 0.5em;*/
+    margin: 0;
+    max-width: 650px;
+    color: #585858
+        /* font-family: 'Poiret One', cursive; */
 }
 
 .datum {
-    font-size: 1rem;
-    margin-bottom: 1em;
+    font-size: 2rem;
+    font-weight: 500;
+    float: right;
+    /* margin: 0.5rem; */
+    margin: 0;
+    color: #585858
+}
+
+.nadpisdatum {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: baseline;
 }
 
 /* Style the images */
 .project-image {
     max-width: 100%;
     height: auto;
-    border: 1px solid #ccc;
-    margin: 0.5rem 0 0.5rem 0;
+    margin: 0.5rem 0 0 0;
+    border-radius: 1%;
+}
+
+figcaption {
+    margin-top: -0.5rem;
 }
 
 /* Style image info */
@@ -60,16 +81,25 @@ header {
     padding: 1em;
 }
 
+h2 {
+    font-weight: 400;
+}
+
+
 .hl {
     font-size: 2em;
-    font-weight: bold;
     margin-bottom: 0.5em;
+    font-family: 'Noto Sans Lao Looped', sans-serif;
+    font-weight: 300;
 }
 
 .hr {
     float: right;
     font-size: 1.5em;
     margin-bottom: 0.5em;
+    font-family: 'Noto Sans Lao Looped', sans-serif;
+    font-weight: 200;
+    /* font-family: 'Poiret One', cursive; */
 }
 
 .h-img {
@@ -86,13 +116,13 @@ header {
 
 .MM-info h3 {
     font-size: 1.5em;
-    font-weight: bold;
+    /* font-weight: bold; */
     margin-bottom: 0.5em;
 }
 
 .úvodník h3 {
     font-size: 1.2em;
-    font-weight: bold;
+    font-weight: 400;
     margin-bottom: 0.5em;
 }
 
