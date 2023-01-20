@@ -5,15 +5,16 @@
     --accent: #F4B860;
 } */
 
-
+/* Body Styles */
 body {
     max-width: 980px;
     margin: auto;
     font-family: 'Noto Sans Lao Looped', sans-serif;
     font-weight: 300;
+
 }
 
-/* Make images display in a grid on larger screens */
+/* Media Query to display images in grid on larger screens */
 @media (min-width: 768px) {
     .image-container {
         display: grid;
@@ -22,7 +23,7 @@ body {
     }
 }
 
-/* Make images display in one column on smaller screens */
+/* Media Query to display images in one column on smaller screens */
 @media (max-width: 767px) {
     .image-container {
         display: flex;
@@ -30,6 +31,77 @@ body {
     }
 }
 
+/* Header Styles */
+header {
+    padding: 1em;
+}
+
+.header-titles {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 0.25rem;
+}
+
+h1.hl {
+    float: left;
+    font-size: 2em;
+    margin-bottom: 0rem;
+    font-family: 'Noto Sans Lao Looped', sans-serif;
+    font-weight: 300;
+}
+
+h1.hr {
+    float: right;
+    font-size: 1.5em;
+    margin-bottom: 0.2rem;
+    font-family: 'Noto Sans Lao Looped', sans-serif;
+    font-weight: 200;
+    /* font-family: 'Poiret One', cursive; */
+}
+
+img.h-img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1em;
+}
+
+/* Image Container Styles */
+/* 
+.image-container {
+
+} 
+*/
+
+/* Styles for .MM-info and .úvodník */
+.MM-info,
+.úvodník {
+    padding: 0 1em 1em 1em;
+}
+
+.MM-info h3 {
+    font-size: 1.2em;
+    /* font-weight: bold; */
+    padding-top: 0.1rem;
+    margin-top: 0.1rem;
+    margin-bottom: 0.5em;
+}
+
+.úvodník h3 {
+    font-size: 1.2em;
+    font-weight: 400;
+    margin-top: 0.1rem;
+    margin-bottom: 0.5em;
+}
+
+/* Main Content Styles */
+.main-content {
+    padding: 1em;
+}
+
+/* Project Styles */
 /* Add some padding and style the project name and date */
 .projekt {
     padding: 1em;
@@ -38,30 +110,52 @@ body {
 .project-name {
     font-size: 1.5em;
     font-weight: 400;
-    /* margin-bottom: 0.5em;*/
     margin: 0;
     max-width: 650px;
-    color: #585858
-        /* font-family: 'Poiret One', cursive; */
+    color: #585858;
+}
+
+/* paragraph styles */
+p {
+    max-width: 100%;
+}
+
+/* územní plány headings */
+h5,
+h4 {
+    font-weight: 400;
+    font-size: 1.15rem;
+    color: #585858;
+    margin: 0.8rem 0 0.8rem 0;
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: 400;
+    margin: 0;
+    max-width: 650px;
+    color: #585858;
+
 }
 
 .datum {
-    font-size: 2rem;
+    font-size: 4rem;
     font-weight: 500;
     float: right;
     /* margin: 0.5rem; */
     margin: 0;
-    color: #585858
+    color: #585858;
 }
 
+/* Nadpisdatum Styles */
 .nadpisdatum {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    align-items: baseline;
+    align-items: center;
 }
 
-/* Style the images */
+/* Project Image Styles */
 .project-image {
     max-width: 100%;
     height: auto;
@@ -69,67 +163,14 @@ body {
     border-radius: 1%;
 }
 
-figcaption {
+.project-image:hover {
+    opacity: 90%;
+}
+
+/* figcaption {
     margin-top: -0.5rem;
-}
+} */
 
-/* Style image info */
-
-
-/* Add some padding and style the header */
-header {
-    padding: 1em;
-}
-
-h2 {
-    font-weight: 400;
-}
-
-
-.hl {
-    font-size: 2em;
-    margin-bottom: 0.5em;
-    font-family: 'Noto Sans Lao Looped', sans-serif;
-    font-weight: 300;
-}
-
-.hr {
-    float: right;
-    font-size: 1.5em;
-    margin-bottom: 0.5em;
-    font-family: 'Noto Sans Lao Looped', sans-serif;
-    font-weight: 200;
-    /* font-family: 'Poiret One', cursive; */
-}
-
-.h-img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 1em;
-}
-
-/* Add some padding and style the sections in the header */
-.MM-info,
-.úvodník {
-    padding: 1em;
-}
-
-.MM-info h3 {
-    font-size: 1.5em;
-    /* font-weight: bold; */
-    margin-bottom: 0.5em;
-}
-
-.úvodník h3 {
-    font-size: 1.2em;
-    font-weight: 400;
-    margin-bottom: 0.5em;
-}
-
-/* Add some padding to the main content */
-.main-content {
-    padding: 1em;
-}
 
 .big-p {
     max-width: 452px;

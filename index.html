@@ -5,18 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Katalog M.M.</title>
+    <link href="lightbox.css" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Noto+Sans+Lao+Looped:wght@300;500&family=Poiret+One&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+Lao+Looped:wght@300;500;800&family=Poiret+One&display=swap"
         rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <h1 class="hl">Milan Míšek</h1>
-        <h1 class="hr">Architektonická tvorba v letech 1960/1991</h1>
+        <div class="header-titles">
+            <h1 class="hl">Milan Míšek</h1>
+            <h1 class="hr">Architektonická tvorba v letech 1960/1991</h1>
+        </div>
         <img class="h-img image" src="https://picsum.photos/980/350?grayscale&blur=6" alt="">
         <div class="image-container">
             <section class="MM-info">
@@ -25,26 +28,35 @@
             </section>
             <section class="úvodník">
                 <h3 class="nadpis">Úvodník</h3>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro aspernatur nostrum autem doloremque
-                dolor,
-                officiis quo? Soluta minima praesentium itaque quasi perferendis omnis? Magni fugiat consectetur
-                corrupti
-                reprehenderit explicabo veritatis.
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro aspernatur nostrum autem doloremque
+                    dolor,
+                    officiis quo? Soluta minima praesentium itaque quasi perferendis omnis? Magni fugiat consectetur
+                    corrupti
+                    reprehenderit explicabo veritatis.</p>
             </section>
         </div>
 
     </header>
     <main class="main-content">
         <section class="projekt">
-            <h2 class="nadpis">Projekty</h2>
+            <!-- <h2 class="nadpis">Projekty</h2> -->
             <div class="nadpisdatum">
                 <h4 class="project-name">Studie územního plánu Střekova</h4>
                 <p class="datum">1958 - 1959</p>
             </div>
             <p class="autor">Autoři: ing.arch. Milan Míšek</p>
             <div class="image-container">
-                <img class="project-image" src="img/strekov01.jpg" alt="strekov01">
-                <img class="project-image" src="img/strekov02.jpg" alt="strekov02">
+
+                <a href="img/strekov01.jpg" data-lightbox="image-1" data-title="Diplomní projekt Střekov">
+                    <img class="project-image" src="img/strekov01.jpg" alt="strekov01" data-lightbox="strekov"></a>
+
+                <a href="img/strekov02.jpg" data-lightbox="image-1" data-title="Diplomní projekt Střekov">
+                    <img class="project-image" src="img/strekov02.jpg" alt="strekov01" data-lightbox="strekov"></a>
+
+                <!-- <img class="project-image" src="img/strekov01.jpg" alt="strekov01">
+                <img class="project-image" src="img/strekov02.jpg" alt="strekov02"> -->
+
+
             </div>
             <p>Míškův před-diplomní a diplomní projekt. Rok 1958, 1959, obhajoba 1960, kantoři ČVUT - Doc. Jan Krásný,
                 prof. Jindřich Krize</p>
@@ -79,7 +91,7 @@
                 dokončení úkolu byl Milan Míšek následně převelen do tak zvané projektové roty v Ruzyni, která byla k
                 dispozici VPÚ v Dejvicích. Tím se stal stálým vojínem projekční roty, která sídlila v kasárnách v Ruzyni
                 a na pracoviště Vojenského projektového ústavu v Dejvicích denně dojížděl. Tehdy ústav vedl Blahomír
-                Borovička a šéfem skupiny byl ing. arch. Mirek Vlnas. Ateliéru velel technolog Ogoun – mimochodem
+                Borovička a šéfem skupiny byl ing. arch. Mirek Vlnas. Ateliéru velel technolog Ogoun - mimochodem
                 významná osobnost z atentátu na říšského protektora.</p>
         </section>
 
@@ -90,7 +102,11 @@
             </div>
             <p class="autor">Autoři: Jaromír Vejl, Milan Míšek, Jan Gabriel</p>
             <div class="image-container">
-                <img class="project-image" src="img/uzemni_plan01.jpg" alt="uzemni_plan01">
+
+                <a href="img/uzemni_plan01.jpg" data-lightbox="uzemni-plan" data-title="Územní plán města teplice">
+                    <img class="project-image" src="img/uzemni_plan01.jpg" alt="strekov01"> </a>
+
+
             </div>
         </section>
 
@@ -99,10 +115,12 @@
                 <h4 class="project-name">Studie a PÚP sídliště Bílina - Za Chlumem</h4>
                 <p class="datum">1964</p>
             </div>
-            <p class="autor">Autoři: Milan Míšek, Josefem Rotyka, Jaromír Vejl</p>
+            <p class="autor">Autoři: Milan Míšek, Josef Rotyka, Jaromír Vejl</p>
             <div class="image-container">
-                <img class="project-image" src="img/za_chlumem01.jpg" alt="za_chlumem01">
-                <img class="project-image" src="img/za_chlumem02.jpg" alt="za_chlumem02">
+                <a href="img/za_chlumem01.jpg" data-lightbox="za-chlumem" data-title="Za Chlumem">
+                    <img class="project-image" src="img/za_chlumem01.jpg" alt="Za Chlumem"> </a>
+                <a href="img/za_chlumem02.jpg" data-lightbox="za-chlumem" data-title="Za Chlumem">
+                    <img class="project-image" src="img/za_chlumem02.jpg" alt="Za Chlumem"> </a>
             </div>
         </section>
 
@@ -113,7 +131,9 @@
             </div>
             <p class="autor">Autoři: Jaromír Vejl, Míťa Hejduk, Milan Míšek, Jan Kouba</p>
             <div class="image-container">
-                <img class="project-image" src="img/retenice01.png" alt="retenice01">
+                <a href="img/retenice01.png" data-lightbox="Teplice - Řetenice, za nemocnicí"
+                    data-title="Teplice - Řetenice, za nemocnicí">
+                    <img class="project-image" src="img/retenice01.png" alt="Teplice - Řetenice, za nemocnicí"> </a>
                 <p>Celková situace sídliště Řetenice - Za nemocnicí, s detailem AREÁLU PERLA (reprodukce z původní
                     ozalidové
                     kopie dokumentace - úvodního projektu z roku 1965)</p>
@@ -137,8 +157,10 @@
             </div>
             <p class="autor">Autoři: Jan Kouba, Míťa Hejduk, Milan Míšek</p>
             <div class="image-container">
-                <img class="project-image" src="img/perla01.png" alt="perla01">
-                <img class="project-image" src="img/perla02.png" alt="perla02">
+                <a href="img/perla01.png" data-lightbox="Perla" data-title="Perla">
+                    <img class="project-image" src="img/perla01.png" alt="Perla"> </a>
+                <a href="img/perla02.png" data-lightbox="Perla" data-title="Perla">
+                    <img class="project-image" src="img/perla02.png" alt="Perla"> </a>
             </div>
             <p>Projekt a realizace vybavenosti, věžových domů hotelového bydlení (2 x 72 bytových jednotek) a 24
                 bytových jednotek TO6B. Soubor staveb získal významné ocenění v přehlídce architektonických děl 1966.
@@ -152,7 +174,9 @@
             </div>
             <p class="autor">Autoři: Jan Kouba, Milan Míšek</p>
             <div class="image-container">
-                <img class="project-image" src="img/bila_cesta01.jpg" alt="bila_cesta01">
+                <a href="img/bila_cesta01.jpg" data-lightbox="bila_cesta01" data-title="Bílá Cesta">
+                    <img class="project-image" src="img/bila_cesta01.jpg" alt="Bílá Cesta">
+                </a>
                 <p>Projekt sídliště s podnikovou výstavbou rodinných domků jako podnikového bydlení. Na tu dobu se
                     jednalo o velmi kvalitní bydlení s využitím dobrých materiálů.</p>
             </div>
@@ -170,11 +194,15 @@
                 přechází spolu s arch. Jaromírem Vejlem do Urbanistického střediska, které vede arch. Míla Hrouda.</p>
             <div class="image-container">
                 <div>
-                    <img class="project-image" src="img/up_moravany1.jpg" alt="územní plán moravany">
+                    <a href="img/up_moravany1.jpg" data-lightbox="up_moravany" data-title="územní plán moravany">
+                        <img class="project-image" src="img/up_moravany1.jpg" alt="územní plán moravany">
+                    </a>
                     <figcaption>ÚP Moravany</figcaption>
                 </div>
                 <div>
-                    <img class="project-image" src="img/up_moravany2.jpg" alt="územní plán moravany">
+                    <a href="img/up_moravany2.jpg" data-lightbox="up_moravany" data-title="územní plán dubice">
+                        <img class="project-image" src="img/up_moravany2.jpg" alt="územní plán moravany">
+                    </a>
                     <figcaption>ÚP Dubice</figcaption>
                 </div>
             </div>
@@ -207,9 +235,12 @@
             </div>
             <p class="autor">Autoři: Milan Hrouda, Milan Míšek</p>
             <div class="image-container">
-                <img class="project-image" src="img/chabarovice02.jpg" alt="chabarovice02">
+                <a href="img/chabarovice02.jpg" data-lightbox="chabarovice" data-title="">
+                    <img class="project-image" src="img/chabarovice02.jpg" alt="chabarovice02">
+                </a>
                 <div>
-                    <img class="project-image" src="img/chabarovice01.jpg" alt="chabarovice01">
+                    <a href="img/chabarovice01.jpg" data-lightbox="chabarovice" data-title="">
+                        <img class="project-image" src="img/chabarovice01.jpg" alt="chabarovice01"></a>
                     <figcaption>Projekt vodní rekultivace zbytkové jámy po ukončení těžby, rekultivace vnějších a
                         vnitřních výsypek a návrh obnovy osídlení a infrastruktury.</figcaption>
                 </div>
@@ -221,18 +252,23 @@
                 <h4 class="project-name">Koncepce rozvoje škol v přírodě</h4>
                 <p class="datum">1975 - 1978</p>
             </div>
-            <p class="autor">Autoři: </p>
+            <p class="autor">Autoři: Milan Míšek, Jaromír Vejl </p>
             <p>Projekt obsahoval metodiku, problematiku, výsledky lékařských výzkumů a zdravotní stav. Jednalo se o
                 koncepci škol v přírodě pro severočeský kraj, pro okres Teplice. Zásadní byl výběr lokalit a zastavovací
-                plány doporučených lokalit. Práce byla oceněna medailí 1.stupně - HLEDÁME DOKONALÝ PROJEKT. Spoluautorem
-                byl arch. Jaromír Vejl.</p>
+                plány doporučených lokalit. Práce byla oceněna medailí 1.stupně - HLEDÁME DOKONALÝ PROJEKT.</p>
             <div class="image-container">
                 <div>
-                    <img class="project-image" src="img/svp04.jpg" alt="navrh mist pro skolu v prirode">
+                    <a href="img/svp04.jpg" data-lightbox="svp" data-title="Návrh míst pro školu v přírodě">
+                        <img class="project-image" src="img/svp04.jpg" alt="navrh mist pro skolu v prirode">
+                    </a>
                     <figcaption>Návrh míst pro školy</figcaption>
                 </div>
                 <div>
-                    <img class="project-image" src="img/svp03.jpg" alt="architektonicke reseni skoly kojsice u susice">
+                    <a href="img/svp03.jpg" data-lightbox="svp"
+                        data-title="Archihtektonické řešení školy Kojšice u Sušice">
+                        <img class="project-image" src="img/svp03.jpg"
+                            alt="architektonicke reseni skoly kojsice u susice">
+                    </a>
                     <figcaption>Příklad architektonického řešení Kojšice u Sušice</figcaption>
                 </div>
             </div>
@@ -245,7 +281,9 @@
             </div>
             <p class="autor">Autoři: Milan Míšek</p>
             <div class="image-container">
-                <img class="project-image" src="img/sobedruhy02.png" alt="sobedruhy02">
+                <a href="img/sobedruhy02.png" data-lightbox="sobedruhy" data-title="Sobědruhy">
+                    <img class="project-image" src="img/sobedruhy02.png" alt="sobedruhy02">
+                </a>
                 <div>
                     <p>Prvotní ideová urbanistická studie sídliště a rekreační zóny byla postupně rozpracována na
                         jednotlivé etapy (celkem 4), z nichž nakonec byly realizovány 3. Výstavba tohoto sídliště o
@@ -261,7 +299,9 @@
                 </div>
 
                 <div>
-                    <img class="project-image" src="img/sobedruhy01.png" alt="sobedruhy01">
+                    <a href="img/sobedruhy01.png" data-lightbox="sobedruhy" data-title="Sobědruhy">
+                        <img class="project-image" src="img/sobedruhy01.png" alt="sobedruhy01">
+                    </a>
 
                 </div>
                 <div>
@@ -294,8 +334,14 @@
             </div>
             <p class="autor">Autoři: Milan Míšek</p>
             <div class="image-container">
-                <img class="project-image" src="img/tri_rybniky01.jpg" alt="sobedruhy01">
-                <img class="project-image" src="img/tri_rybniky02.jpg" alt="sobedruhy02">
+                <a href="img/tri_rybniky01.jpg" data-lightbox="tri_rybniky"
+                    data-title="Park Volného času Tři rybníky Sobědruhy">
+                    <img class="project-image" src="img/tri_rybniky01.jpg" alt="sobedruhy01">
+                </a>
+                <a href="img/tri_rybniky02.jpg" data-lightbox="tri_rybniky"
+                    data-title="Park Volného času Tři rybníky Sobědruhy">
+                    <img class="project-image" src="img/tri_rybniky02.jpg" alt="sobedruhy02">
+                </a>
             </div>
             <p>Projekt na rekultivaci vodních ploch v blízkosti sídliště Trnovany-Sobědruhy</p>
         </section>
@@ -305,13 +351,15 @@
                 <h4 class="project-name">Územní plán sídelního útvaru Teplice</h4>
                 <p class="datum">1981</p>
             </div>
-            <p class="autor">Autoři</p>
+            <p class="autor">Autoři: Milan Míšek, Bohumil Šantrůček</p>
             <div class="image-container">
-                <img class="project-image" src="img/up_teplice01.png" alt="up_teplice01">
+                <a href="img/up_teplice01.png" data-lightbox="up_teplice"
+                    data-title="Územní plán sídelního útvaru Teplice">
+                    <img class="project-image" src="img/up_teplice01.png" alt="up_teplice01"></a>
                 <p>Jeho první verze - koncept, byl dokončen v roce 1981 a přinesl nové pohledy na další existenci
                     lázeňského
                     města pod hrozbou rozpínavých záměrů resortu paliv a energetiky. Dokumentace byla oceněna I. cenou v
-                    přehlídce urbanistických projektů Projekt byl vypracován ve stejném období jako výtvarný generel –
+                    přehlídce urbanistických projektů Projekt byl vypracován ve stejném období jako výtvarný generel -
                     resp.
                     předcházel, neboť projednávání a schvalování územního plánu bylo časově velmi dlouhé. Výtvarný
                     generel
@@ -328,7 +376,9 @@
             </div>
             <p class="autor">Autoři: Milan Míšek, Bohumil Šantrůček</p>
             <div class="image-container">
-                <img class="project-image" src="img/up_teplice02.jpg" alt="up_teplice02">
+                <a href="img/up_teplice02.jpg" data-lightbox="up_teplice02" data-title="Územní plán centra Teplice">
+                    <img class="project-image" src="img/up_teplice02.jpg" alt="up_teplice02">
+                </a>
             </div>
             <p>Projekt byl zadán na základě výsledků celostátní soutěže a řešil zejména bytovou výstavbu na plochách po
                 demolicích v centrální části a dále umístění občanské vybavenosti kolem náměstí Svobody a Mírového
@@ -344,27 +394,34 @@
             <p class="autor">Autoři: Pavel Ponča, Milan Míšek</p>
             <div class="image-container">
                 <div>
-                    <img class="project-image" src="img/idk01.jpg" alt="Teplice-Pražská_1">
+                    <a href="img/idk01.jpg" data-lightbox="prazska" data-title="Bytová výstavba Teplice-Pražská">
+                        <img class="project-image" src="img/idk01.jpg" alt="Teplice-Pražská_1">
+                    </a>
+                    <a href="img/idk02.jpg" data-lightbox="prazska" data-title="Bytová výstavba Teplice-Pražská">
+                    </a>
                     <img class="project-image" src="img/idk02.jpg" alt="Teplice-Pražská_2">
                     <figcaption>Teplice- Pražská, pohled V (stav)</figcaption>
                 </div>
 
 
                 <div>
-                    <img class="project-image" src="img/idk03.jpg" alt="Teplice-Pražská_3">
+                    <a href="img/idk03.jpg" data-lightbox="prazska" data-title="Bytová výstavba Teplice-Pražská">
+                        <img class="project-image" src="img/idk03.jpg" alt="Teplice-Pražská_3"></a>
                     <figcaption>Teplice-Pražská, pohled V (idea)</figcaption>
                 </div>
 
 
                 <div>
-                    <img class="project-image" src="img/idk04.jpg" alt="Teplice-Pražská_4">
+                    <a href="img/idk03.jpg" data-lightbox="prazska" data-title="Bytová výstavba Teplice-Pražská">
+                        <img class="project-image" src="img/idk04.jpg" alt="Teplice-Pražská_4"></a>
                     <figcaption>Teplice-Pražská, pohled Z (idea)</figcaption>
                 </div>
 
 
 
                 <div>
-                    <img class="project-image" src="img/prazska01.jpg" alt="Teplice-Pražská_4">
+                    <a href="img/prazska01.jpg" data-lightbox="prazska" data-title="Bytová výstavba Teplice-Pražská">
+                        <img class="project-image" src="img/prazska01.jpg" alt="Teplice-Pražská_4"></a>
                     <figcaption>Teplice-Pražská, situace</figcaption>
                 </div>
 
@@ -382,32 +439,39 @@
                 </h4>
                 <p class="datum">1982 - 1992</p>
             </div>
-            <p class="autor">Autoři: Milan Míšek, Bořek Zatloukal, Jiří Páč.</p>
+            <p class="autor">Autoři: Milan Míšek, Bořek Zatloukal, Jiří Páč</p>
             <p>Stavba sídliště byla zahájena v roce 1982 a ukončena byla po roce 1992 jako nedokončené torzo, bez
                 základní a vyšší vybavenosti. Nová Ves byla připravována jako obytný soubor KBV od počátku osmdesátých
                 let. První studie vznikly již v roce 1978 </p>
             <div class="image-container">
                 <div>
-                    <img class="project-image" src="img/novaves1.jpg" alt="novaves">
+                    <a href="img/novaves1.jpg" data-lightbox="novaves" data-title="Nová Ves">
+                        <img class="project-image" src="img/novaves1.jpg" alt="novaves">
+                    </a>
                     <figcaption>Svislým šrafováním vyznačeny plochy navrženého obytného souboru na Nové Vsi.
                     </figcaption>
                 </div>
                 <div>
-                    <img class="project-image" src="img/novaves2.jpg" alt="novaves">
+                    <a href="img/novaves2.jpg" data-lightbox="novaves" data-title="Nová Ves">
+                        <img class="project-image" src="img/novaves2.jpg" alt="novaves"></a>
                 </div>
                 <div>
-                    <img class="project-image" src="img/novaves4.jpg" alt="novaves">
+                    <a href="img/novaves4.jpg" data-lightbox="novaves" data-title="Nová Ves">
+                        <img class="project-image" src="img/novaves4.jpg" alt="novaves"></a>
                     <figcaption><em>Demontáž, přemístění a nová instalace památníku Dr. H. Kudlicha na Nové Vsi</em>
                         (Zrušení roboty)
                     </figcaption>
-                    <img class="project-image" src="img/novaves3.jpg" alt="novaves">
+                    <a href="img/novaves3.jpg" data-lightbox="novaves" data-title="Nová Ves">
+                        <img class="project-image" src="img/novaves3.jpg" alt="novaves">
+                    </a>
                     <figcaption>Na obrázku širokého panoramatického pohledu z Doubravské hory je dokumentováno náročné
                         prostorové formování skladby, struktury, měřítka a uplatnění sídliště v dálkových krajinných
                         pohledech.</figcaption>
 
                 </div>
                 <div>
-                    <img class="project-image" src="img/novaves5.jpg" alt="novaves">
+                    <a href="img/novaves5.jpg" data-lightbox="novaves" data-title="Nová Ves">
+                        <img class="project-image" src="img/novaves5.jpg" alt="novaves"></a>
                     <figcaption><em>Návrh na barevné provedení a vnější úpravy okolí věže vodojemu na vrcholu tzv.
                             Kudlichovy výšiny</em> Montáž teplického vodojemu
                     </figcaption>
@@ -429,7 +493,9 @@
             <p class="autor">Autoři: Luboš Kotiš, Milan Míšek</p>
             <div class="image-container">
                 <div>
-                    <img class="project-image" src="img/bystrany01.jpg" alt="bystrany01">
+                    <a href="img/bystrany01.jpg" data-lightbox="bystrany"
+                        data-title="Generel pohřebnictví v okrese Teplice">
+                        <img class="project-image" src="img/bystrany01.jpg" alt="bystrany01"></a>
                     <figcaption>Poloha Bystřanského hřbitova v krajině pod Doubravkou</figcaption>
                     <p>Cílem tohoto generelu bylo vyřešit nastávající problematiku nedostatku míst pro pohřbívání. Dále
                         také
@@ -437,7 +503,9 @@
                         Bystřan
                         s novou Smuteční a Obřadní síní</p>
                 </div>
-                <img class="project-image" src="img/bystrany02.jpg" alt="bystrany01">
+                <a href="img/bystrany02.jpg" data-lightbox="bystrany"
+                    data-title="Generel pohřebnictví v okrese Teplice">
+                    <img class="project-image" src="img/bystrany02.jpg" alt="bystrany01"></a>
             </div>
         </section>
 
@@ -459,7 +527,8 @@
                 <div>
                     <figcaption>Návrh využití území odkaliště elektrárny Ledvice-spolupráce s Doc. Jaroslavem Horkým,
                         CSc.</figcaption>
-                    <img class="project-image" src="img/ledvice.jpg" alt="ledvice">
+                    <a href="img/ledvice.jpg" data-lightbox="Ledvice" data-title="Ledvice">
+                        <img class="project-image" src="img/ledvice.jpg" alt="ledvice"></a>
                 </div>
             </div>
 
@@ -475,11 +544,17 @@
                 <div>
                     <p>Architekt Milan Míšek a Míťa Hejduk vyhráli v roce 1968 celostátní soutěž na nový lázeňský ústav
                         v Teplicích.</p>
-                    <img class="project-image" src="img/lazne1.jpg" alt="lazne teplice">
-                    <img class="project-image" src="img/idk05.png" alt="lazne teplice">
+                    <a href="img/lazne1.jpg" data-lightbox="lazne" data-title="Lázně Teplice">
+                        <img class="project-image" src="img/lazne1.jpg" alt="lazne teplice">
+                    </a>
+                    <a href="img/idk05.png" data-lightbox="lazne" data-title="Lázně Teplice">
+                        <img class="project-image" src="img/idk05.png" alt="lazne teplice">
+                    </a>
                 </div>
                 <div>
-                    <img class="project-image" src="img/up_teplice03.png" alt="up_teplice02">
+                    <a href="img/up_teplice03.png" data-lightbox="lazne" data-title="Lázně Teplice">
+                        <img class="project-image" src="img/up_teplice03.png" alt="up_teplice02">
+                    </a>
                     <figcaption>K tomuto generelu se váže i plánování prostředí lázeňského centra ve vztahu k plánu
                         těžby.
                         Tedy podoba města a rozvoj osídlení.</figcaption>
@@ -497,7 +572,9 @@
             <p>Přestavba na školní hudební sál</p>
             <div class="image-container">
                 <div>
-                    <img class="project-image" src="img/kaple.jpg" alt="kaple">
+                    <a href="img/kaple.jpg" data-lightbox="kaple" data-title="Kaple Boromejek">
+                        <img class="project-image" src="img/kaple.jpg" alt="kaple">
+                    </a>
                 </div>
                 <figcaption>Vyzobrazené lavice byly přeneseny z teplického kostela Bartholomeus.</figcaption>
             </div>
@@ -512,10 +589,12 @@
             <p class="autor">Autoři: Milan Míšek, Jaroslav Horký</p>
             <div class="image-container">
                 <div>
-                    <img class="project-image" src="img/dubi02.jpg" alt="dubi01">
+                    <a href="img/dubi02.jpg" data-lightbox="dubi" data-title="Dubí">
+                        <img class="project-image" src="img/dubi02.jpg" alt="dubi01"></a>
                 </div>
                 <div>
-                    <img class="project-image" src="img/dubi01.jpg" alt="dubi01">
+                    <a href="img/dubi01.jpg" data-lightbox="dubi" data-title="Dubí">
+                        <img class="project-image" src="img/dubi01.jpg" alt="dubi01"></a>
                     <figcaption>Situace řešení zeleně 1:200</figcaption>
                     <figcaption>Situace, prostorové řešení 1:200</figcaption>
                 </div>
@@ -534,11 +613,15 @@
                 privatizací a reformami v NG</p>
             <div class="image-container">
                 <div>
-                    <img class="project-image" src="img/galerie01.jpg" alt="galerie">
+                    <a href="img/galerie01.jpg" data-lightbox="bartholomeus"
+                        data-title="Kostel sv. Prokopa - Bartholomeus">
+                        <img class="project-image" src="img/galerie01.jpg" alt="galerie"></a>
                     <figcaption>Interiér galerie</figcaption>
                 </div>
                 <div>
-                    <img class="project-image" src="img/galerie02.jpg" alt="galerie">
+                    <a href="img/galerie02.jpg" data-lightbox="bartholomeus"
+                        data-title="Kostel sv. Prokopa - Bartholomeus">
+                        <img class="project-image" src="img/galerie02.jpg" alt="galerie"></a>
                     <figcaption>Plánovaná vyhlídka</figcaption>
                 </div>
         </section>
@@ -551,10 +634,10 @@
             <p class="autor">Autoři: Milan Míšek, Jiří Páč, Bořek Zatloukal</p>
             <div class="image-container">
                 <div>
-                    <a href="img/perokresba.jpg" target="_blank">
+                    <a href="img/perokresba.jpg" data-lightbox="perokresba"
+                        data-title="Perokresba Nedbalova - Scheinerova - Zemská - Anger">
                         <img class="project-image" src="img/perokresba.jpg"
-                            alt="perokresba Nedbalova - Scheinerova - Zemská - Anger">
-                    </a>
+                            alt="perokresba Nedbalova - Scheinerova - Zemská - Anger"></a>
                     <figcaption>Míškova perokresba zachycuje tehdejší historické činžovní domy.</figcaption>
                 </div>
                 <p>Projekt specifický pro Teplice, především z důvodu řešeného území kolem Zeleného kostela. Ten byl
@@ -570,32 +653,39 @@
                 <h2>Architektonické soutěže</h2>
                 <p class="datum">1963 - 1985</p>
             </div>
-            <p>Na soutěžích pracoval architekt v osvědčeném architektonickém kolektivu – spolu s ing. Arch. Míťou
+            <p>Na soutěžích pracoval architekt v osvědčeném architektonickém kolektivu - spolu s ing. Arch. Míťou
                 Hejdukem, Ing. Arch. Václavem Krejčím, arch. Jaromírem Vejlem. K nejvýznamnějším soutěžím, z celé řady
                 celostátních architektonických a urbanistických, patří následující. </p>
             <div class="image-container">
                 <div>
-                    <img class="project-image" src="img/unl1.jpg" alt="ústí nad labem centrum">
+                    <a href="img/unl1.jpg" data-lightbox="souteze" data-title="Ústí nad Labem centrum">
+                        <img class="project-image" src="img/unl1.jpg" alt="ústí nad labem centrum"></a>
                     <figcaption>Severní terasa v Ústí nad Labem - 1963</figcaption>
+
                 </div>
                 <div>
-                    <img class="project-image" src="img/ostrava1.jpg" alt="ostrava">
+                    <a href="img/ostrava1.jpg" data-lightbox="souteze" data-title="Ostrava">
+                        <img class="project-image" src="img/ostrava1.jpg" alt="ostrava"></a>
                     <figcaption>Jižní obytná oblast Ostravy - 1963 (II. cena)</figcaption>
                 </div>
                 <div>
-                    <img class="project-image" src="img/bohnice.jpg" alt="bohnice">
-                    <figcaption>Soutěž na obytný obvod Praha - Bohnice – 1964 (III. cena)</figcaption>
+                    <a href="img/bohnice.jpg" data-lightbox="souteze" data-title="Bohnice">
+                        <img class="project-image" src="img/bohnice.jpg" alt="bohnice"></a>
+                    <figcaption>Soutěž na obytný obvod Praha - Bohnice - 1964 (III. cena)</figcaption>
                 </div>
                 <div>
-                    <img class="project-image" src="img/ostrava2.jpg" alt="bohnice">
-                    <figcaption>Soutěž na sektorové centrum Ostravy – Poruby – 1965 (II. cena)</figcaption>
+                    <a href="img/ostrava2.jpg" data-lightbox="souteze" data-title="Ostrava">
+                        <img class="project-image" src="img/ostrava2.jpg" alt="ostrava"></a>
+                    <figcaption>Soutěž na sektorové centrum Ostravy - Poruby - 1965 (II. cena)</figcaption>
                 </div>
                 <div>
-                    <img class="project-image" src="img/lazne2.jpg" alt="lazne2">
+                    <a href="img/lazne2.jpg" data-lightbox="souteze" data-title="Lázně Teplcie">
+                        <img class="project-image" src="img/lazne2.jpg" alt="lazne2"></a>
                     <figcaption>Soutěž na nový lázeňský ústav v Teplicích - 1968 (I. cena)</figcaption>
                 </div>
                 <div>
-                    <img class="project-image" src="img/jizni_mesto1.jpg" alt="jizni_mesto1">
+                    <a href="img/jizni_mesto1.jpg" data-lightbox="souteze" data-title="Jižní město Prahy">
+                        <img class="project-image" src="img/jizni_mesto1.jpg" alt="jizni_mesto1"></a>
                     <figcaption>Soutěž na Jižní město Prahy - II. cena</figcaption>
                 </div>
                 <div>
@@ -614,55 +704,68 @@
             </div>
             <div>
                 <h4>Zdeněk Němeček</h4>
-                <p>V průběhu vojenské služby ve Kbelích a v Ruzyni – návštěvy v ateliéru (bývalý Laudův výtvarný
-                    ateliér) – debaty a spolupráce na výtvarných soutěžích – jako atlet mu Míšek stál i modelem na jeho
+                <p>V průběhu vojenské služby ve Kbelích a v Ruzyni - návštěvy v ateliéru (bývalý Laudův výtvarný
+                    ateliér) - debaty a spolupráce na výtvarných soutěžích - jako atlet mu Míšek stál i modelem na jeho
                     sportovní figury</p>
             </div>
             <div>
-                <h4>Zdeněk Veselý - malíř, grafik – zakládající člen skupiny OBJEKT</h4>
+                <h4>Zdeněk Veselý - malíř, grafik - zakládající člen skupiny OBJEKT</h4>
                 <div>
-                    <img class="project-image" src="img/uuh1.png" alt="mimochod">
-                    <figcaption>Spolupráce a rodinné přátelství od roku 1960 až do jeho smrti. Díla – stěna v areálu
-                        Perly – Teplice, výtvarná pískovcová zeď ve středisku LUNY v Teplicích, školní jídelna Gymnázia
-                        v Teplicích – nástěnná malba. Několik společných výstav.
+                    <a href="img/uuh1.png" data-lightbox="uuh" data-title="Zdeněk Veselý">
+                        <img class="project-image" src="img/uuh1.png" alt="mimochod"></a>
+                    <figcaption>Spolupráce a rodinné přátelství od roku 1960 až do jeho smrti. Díla - stěna v areálu
+                        Perly - Teplice, výtvarná pískovcová zeď ve středisku LUNY v Teplicích, školní jídelna Gymnázia
+                        v Teplicích - nástěnná malba. Několik společných výstav.
                     </figcaption>
                 </div>
             </div>
         </section>
 
         <section>
-            <p>Miroslav Raboch – kamarád, atlet, vynikající keramik, - zakládající člen skupiny OBJEKT</p>
+            <h4>Miroslav Raboch - kamarád, atlet, vynikající keramik, - zakládající člen skupiny OBJEKT</h4>
+            <p>Spolupráce - sousoší dětí v kašně u divadla v Teplicích - keramika před rokem 1960</p>
 
-            <p>Spolupráce – sousoší dětí v kašně u divadla v Teplicích – keramika před rokem 1960</p>
 
-            <p>Vladimír Preclík a jeho žena Fibichová – společná soutěžní tvůrčí architektů, výtvarníka a sociologa na
-                mezinárodním sympoziu v roce 1966 v Liberci. Společné dílo – centrální plastika v areálu Perly – Teplice
-                – 1968</p>
+            <h4>Vladimír Preclík a jeho žena Fibichová</h4>
+            <p>společná soutěžní tvůrčí architektů, výtvarníka a sociologa na
+                mezinárodním sympoziu v roce 1966 v Liberci. Společné dílo - centrální plastika v areálu Perly - Teplice
+                - 1968</p>
 
-            <p>Vladimír Šavel - malíř, grafik. Spolupráce na interiéru restaurace v areálu Perly - dělící výtvarná stěna
-                z dřevěných soustružených prvků – 1968.</p>
+            <h4>Vladimír Šavel - malíř, grafik</h4>
+            <p>Spolupráce na interiéru restaurace v areálu Perly - dělící výtvarná stěna
+                z dřevěných soustružených prvků - 1968.</p>
 
-            <p>Václav Kyselka – sochař. Spolupráce na realizaci plastik – Teplice – Žena s květinou (1989), Matka s
-                dítětem – pískovec – 1988</p>
+            <h4>Václav Kyselka - sochař</h4>
+            <p>Spolupráce na realizaci plastik - Teplice - Žena s květinou (1989), Matka s
+                dítětem - pískovec - 1988</p>
 
-            <p>Stanislav Hanzík – sochař. Spolupráce na dioritové plastice ležícího koně v Teplicích – Šanově – 1988 -
+            <h4>Stanislav Hanzík - sochař</h4>
+            <p>Spolupráce na dioritové plastice ležícího koně v Teplicích - Šanově - 1988 -
                 1992</p>
 
-            <p>Milan Žofka – keramik. Spolupráce na centrální kašně náměstí Svobody v Teplicích – 1990</p>
+            <h4>Milan Žofka - keramik</h4>
+            <p>Spolupráce na centrální kašně náměstí Svobody v Teplicích - 1990</p>
 
-            <p>Václav Daneš – malíř, grafik. Spolupráce na vydání obrazové publikace o Krušných horách. Spolupráce na
-                modelu knihy, texty, ilustrace – 1984.</p>
+            <h4>Václav Daneš - malíř, grafik</h4>
+            <p> Spolupráce na vydání obrazové publikace o Krušných horách. Spolupráce na
+                modelu knihy, texty, ilustrace - 1984.</p>
 
-            <p>Václav Kús – ilustrátor, grafik – člen skupiny OBJEKT.</p>
+            <h4>Václav Kús - ilustrátor, grafik</h4>
+            <p>člen skupiny OBJEKT.</p>
 
-            <p>Vladimír Šmíd – sochař, keramik. Spolupráce při instalaci děl v exteriérech města.</p>
+            <h4>Vladimír Šmíd - sochař, keramik</h4>
+            <p>Spolupráce při instalaci děl v exteriérech města.</p>
 
-            <p>Ivan Záleský – sochař – spolupráce při instalaci bronzové dvojice dětí u Nových lázní v Teplicích –1989
+            <h4>Ivan Záleský - sochař</h4>
+            <p>spolupráce při instalaci bronzové dvojice dětí u Nových lázní v Teplicích –1989
                 (umístěno 2008)</p>
 
-            <p>Miroslav Houra – malíř, grafik, ilustrátor - společné výstavy se skupinou OBJEKT.</p>
+            <h4>Miroslav Houra - malíř, grafik, ilustrátor </h4>
 
-            <p>Přemysl Straka – malíř společné výstavy členů skupiny OBJEKT</p>
+            <p>společné výstavy se skupinou OBJEKT.</p>
+
+            <h4>Přemysl Straka</h4>
+            <p>malíř společné výstavy členů skupiny OBJEKT</p>
         </section>
 
         <section>
@@ -679,19 +782,20 @@
                 <h4 class="project-name">Společné výstavy</h4>
                 <p class="datum">1960 - 1991</p>
             </div>
-            <p>Galerie výtvarného umění v Roudnici nad Labem – 26. května 1969 – výstava tvůrčí skupiny OBJEKT – Bergr,
+            <p>Galerie výtvarného umění v Roudnici nad Labem - 26. května 1969 - výstava tvůrčí skupiny OBJEKT - Bergr,
                 Brodská, Daneš, Houra, Chlíbec Krejník, Kús, Míšek, Raboch, Straka, Veselý, úvodní zahájení Dr. Jan
                 Škvára</p>
-            <p>Galerie výtvarného umění v Roudnici nad Labem – 26. května 1969 – výstava tvůrčí skupiny OBJEKT – Bergr,
+            <p>Galerie výtvarného umění v Roudnici nad Labem - 26. května 1969 - výstava tvůrčí skupiny OBJEKT - Bergr,
                 Brodská, Daneš, Houra, Chlíbec Krejník, Kús, Míšek, Raboch, Straka, Veselý, úvodní zahájení Dr. Jan
                 Škvára</p>
-            <p>Výstava tvůrčí skupiny OBJEKT – Filova galerie Ústí nad Labem – 1986</p>
+            <p>Výstava tvůrčí skupiny OBJEKT - Filova galerie Ústí nad Labem - 1986</p>
             <p>Výstava diplomních prací absolventů postgraduálního studia Fakulty architektury ČVUT Praha - 1986</p>
-            <p>Výstava enkaustik M. Míška–Muzeum Teplice – prostory bývalého zámeckého divadla – 1987</p>
+            <p>Výstava enkaustik M. Míška–Muzeum Teplice - prostory bývalého zámeckého divadla - 1987</p>
         </section>
 
 
     </main>
+    <script src="lightbox-plus-jquery.js"></script>
 </body>
 
 </html>
