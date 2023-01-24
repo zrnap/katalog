@@ -1,9 +1,21 @@
 function loadMain() {
-    document.getElementById("main-for-load").style.visibility = "visible";
+    var landing = document.getElementById("landing");
+    if (landing) {
+        landing.remove();
+        document.getElementById("main-for-load").style.visibility = "visible";
+    }
 }
 
 document.addEventListener('click', function () {
-    document.getElementById("landing").style.opacity = "0";
+    loadMain();
 });
 
-setTimeout(loadMain, 1000);
+var landing = document.getElementById("landing");
+if (landing) {
+    var landingHeight = landing.clientHeight;
+    window.addEventListener('scroll', function () {
+        if (window.scrollY > landingHeight) {
+            loadMain();
+        }
+    });
+}

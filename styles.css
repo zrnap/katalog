@@ -1,6 +1,6 @@
 :root {
     /* backgrounds */
-    --bg: #c3c2c2;
+    --bg: #dddddd;
     --bg2: #ffffff;
     /* text color */
     --dark1: #12130F;
@@ -56,6 +56,7 @@
 
 .podpis-nadpis {
     width: 10%;
+    margin: 0.5rem;
 }
 
 /* Body Styles */
@@ -113,7 +114,7 @@ h1.hl {
 h1.hr {
     float: right;
     font-size: 1.5em;
-    margin-bottom: 0.2rem;
+    margin: 0.5rem;
     font-weight: 400;
 }
 
