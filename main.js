@@ -7,6 +7,3 @@ document.addEventListener('click', function () {
 });
 
 setTimeout(loadMain, 1000);
-
-
-
