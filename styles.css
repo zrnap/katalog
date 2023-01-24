@@ -12,6 +12,52 @@
     --accent: #F58F00;
 }
 
+
+/* landing page */
+#landing {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://picsum.photos/980/350?grayscale&blur=6');
+    background-size: cover;
+    background-position: center;
+    z-index: 11;
+    opacity: 1;
+    transition: opacity 0.5s ease-out;
+    text-align: center;
+    display: flex;
+}
+
+#landing h1 {
+    font-size: 8rem;
+    font-weight: 900;
+    margin: 5rem;
+}
+
+#landing h1:hover {
+    color: var(--bg2);
+}
+
+
+
+.podpis {
+    height: auto;
+    margin: auto;
+    border-radius: 1%;
+    width: 30%;
+
+}
+
+.podpis:hover {
+    filter: invert(100%);
+}
+
+.podpis-nadpis {
+    width: 10%;
+}
+
 /* Body Styles */
 body {
     max-width: 980px;
@@ -42,9 +88,9 @@ body {
 /* Header Styles */
 header {
     margin-top: 2rem;
-    padding: 2rem;
+    /* padding: 2rem;
     border-radius: 1% 1%;
-    background-color: var(--bg2);
+    background-color: var(--bg2); */
 }
 
 .header-titles {
