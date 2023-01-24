@@ -1,47 +1,230 @@
 :root {
-    /* colors; */
-    --dark1:  #0F0F0F;
-    --dark2:  #2D2E2E;
-    --light:  #F4D6CC;
-    --accent: #F4B860;
+    /* backgrounds */
+    --bg: #dddddd;
+    --bg2: #ffffff;
+    /* text color */
+    --dark1: #12130F;
+    /* other */
+    --darkgray: #585858;
+    --lightgray: #E0E0E0;
+    --blue: #0E1C36;
+    --red: #A44A3F;
+    --accent: #F58F00;
 }
 
-body{
-    max-width: 960px;
-    margin: auto;
-    background-color: var(--light);
-    color: var(--dark1);
-}
 
-header{
-    padding: 1rem;
-}
-
-.responsive{
-    padding: 0;
+/* landing page */
+#landing {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
+    height: 100%;
+    background-image: url('https://picsum.photos/980/350?grayscale&blur=6');
+    background-size: cover;
+    background-position: center;
+    z-index: 11;
+    opacity: 1;
+    transition: opacity 0.5s ease-out;
+    text-align: center;
+    display: flex;
+}
+
+#landing h1 {
+    font-size: 8rem;
+    font-weight: 900;
+    margin: 5rem;
+}
+
+#landing h1:hover {
+    color: var(--bg2);
+}
+
+
+
+.podpis {
     height: auto;
-}
-
-.hl {
-    float: left;
-}
-
-.hr {
-    float: right;
-}
-
-.karta{
-    padding: 1rem;
     margin: auto;
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    border-radius: 1%;
+    width: 30%;
+
 }
 
-.project-name{
-    display:grid;
-    grid-column: 1 / 3;
-    width: 100%;
+.podpis:hover {
+    filter: invert(100%);
+}
+
+.podpis-nadpis {
+    width: 10%;
+    margin: 0.5rem;
+}
+
+/* Body Styles */
+body {
+    max-width: 980px;
+    margin: auto;
+    font-family: 'Noto Sans Thai', sans-serif;
+    font-weight: 400;
+    color: var(--dark1);
+    background-color: var(--bg)
+}
+
+/* Media Query to display images in grid on larger screens */
+@media (min-width: 768px) {
+    .image-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1rem;
+    }
+}
+
+/* Media Query to display images in one column on smaller screens */
+@media (max-width: 767px) {
+    .image-container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* Header Styles */
+header {
+    margin-top: 2rem;
+    /* padding: 2rem;
+    border-radius: 1% 1%;
+    background-color: var(--bg2); */
+}
+
+.header-titles {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 0.25rem;
+
+}
+
+h1.hl {
+    float: left;
+    font-size: 2em;
+    margin-bottom: 0rem;
+    font-weight: 500;
+}
+
+h1.hr {
+    float: right;
+    font-size: 1.5em;
+    margin: 0.5rem;
+    font-weight: 400;
+}
+
+img.h-img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1em;
+}
+
+/* Styles for .MM-info and .úvodník */
+.MM-info,
+.úvodník {
+    padding: 0 1em 1em 1em;
+}
+
+.MM-info h3 {
+    font-size: 1.2em;
+    padding-top: 0.1rem;
+    margin-top: 0.1rem;
+    margin-bottom: 0.5em;
+}
+
+.úvodník h3 {
+    font-size: 1.2em;
+    font-weight: 400;
+    margin-top: 0.1rem;
+    margin-bottom: 0.5em;
+}
+
+/* Main Content Styles */
+.main-content {
+    padding: 1em;
+}
+
+/* Project Styles */
+
+/* Add some padding and style the project name and date */
+.projekt {
+    padding: 2rem;
+    background-color: var(--bg2);
+    margin-top: 1rem;
+    border-radius: 1% 1%;
+}
+
+
+/* paragraph styles */
+p {
+    max-width: 100%;
+}
+
+/* územní plány headings */
+h5,
+h4 {
+    font-weight: 400;
+    font-size: 1.15rem;
+    margin: 0.8rem 0 0.8rem 0;
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: 400;
     margin: 0;
+    max-width: 650px;
+    color: var(--dark1);
+
+}
+
+/* Nadpisdatum Styles */
+.nadpisdatum {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.project-name {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin: 0;
+    max-width: 650px;
+}
+
+.datum {
+    font-size: 3rem;
+    font-weight: 600;
+    float: right;
+    margin: 0;
+}
+
+.autor {
+    font-weight: 700;
+}
+
+/* Project Image Styles */
+.project-image {
+    max-width: 100%;
+    height: auto;
+    margin: 0.5rem 0 0 0;
+    border-radius: 1%;
+}
+
+.project-image:hover {
+    opacity: 90%;
+}
+
+/* figcaption {
+    margin-top: -0.5rem;
+} */
+
+
+.big-p {
+    max-width: 452px;
 }
