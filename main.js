@@ -1,21 +1,10 @@
-function loadMain() {
-    var landing = document.getElementById("landing");
-    if (landing) {
-        landing.remove();
-        document.getElementById("main-for-load").style.visibility = "visible";
+function scrollDown() {
+    window.scrollBy(0, window.innerHeight);
+}
+
+window.addEventListener("scroll", function () {
+    const landingPage = document.querySelector(".landing-page");
+    if (window.scrollY > landingPage.offsetHeight) {
+        landingPage.classList.add("hidden");
     }
-}
-
-document.addEventListener('click', function () {
-    loadMain();
 });
-
-var landing = document.getElementById("landing");
-if (landing) {
-    var landingHeight = landing.clientHeight;
-    window.addEventListener('scroll', function () {
-        if (window.scrollY > landingHeight) {
-            loadMain();
-        }
-    });
-}
