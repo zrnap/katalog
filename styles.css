@@ -27,8 +27,21 @@
     margin: 0;
     padding: 0;
     background-position: center;
-    background-image: url('https://picsum.photos/980/350?grayscale&blur=6');
+    background-image: url('img/uvod01.jpg');
     background-size: cover;
+    animation: grayscale 4s ease-out;
+    filter: grayscale(100%);
+    animation-fill-mode: forwards;
+}
+
+@keyframes grayscale {
+    0% {
+        filter: grayscale(100%);
+    }
+
+    100% {
+        filter: grayscale(30%);
+    }
 }
 
 .landing-page.hidden {
@@ -194,7 +207,7 @@ img.h-img {
     padding: 2rem;
     background-color: var(--bg2);
     margin-top: 1rem;
-    border-radius: 1% 1%;
+    border-radius: 0.2rem;
 }
 
 
