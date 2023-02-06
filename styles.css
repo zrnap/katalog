@@ -1,7 +1,7 @@
 :root {
     /* backgrounds */
-    --bg: #dddddd;
-    --bg2: #ffffff;
+    --bg: #eaeaea;
+    --bg2: #e8e8e8;
     /* text color */
     --dark1: #12130F;
     /* other */
@@ -29,20 +29,31 @@
     background-position: center;
     background-image: url('img/uvod01.jpg');
     background-size: cover;
-    animation: grayscale 4s ease-out;
-    filter: grayscale(100%);
+    animation: grayscale 4s ease-out, blur 4s ease-out;
+    filter: grayscale(100%) blur(2px);
     animation-fill-mode: forwards;
 }
 
 @keyframes grayscale {
     0% {
-        filter: grayscale(100%);
+        filter: grayscale(100%) blur(2px);
     }
 
     100% {
-        filter: grayscale(30%);
+        filter: grayscale(30%) blur(0);
     }
 }
+
+@keyframes blur {
+    0% {
+        filter: grayscale(100%) blur(2px);
+    }
+
+    100% {
+        filter: grayscale(30%) blur(0);
+    }
+}
+
 
 .landing-page.hidden {
     display: none;
@@ -100,8 +111,15 @@
     }
 }
 
+.obraz {
+    position: relative;
+}
+
 .podpis-nadpis {
-    width: 10%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 15%;
     margin: 0.5rem;
 }
 
@@ -114,8 +132,8 @@ body {
 .body-exc-landing-page {
     max-width: 980px;
     margin: auto;
-    font-family: 'Noto Sans Thai', sans-serif;
-    font-weight: 400;
+    font-family: 'Sofia Sans Extra Condensed', sans-serif;
+    font-weight: 300;
     color: var(--dark1);
     background-color: var(--bg)
 }
@@ -164,7 +182,7 @@ h1.hl {
 
 h1.hr {
     float: right;
-    font-size: 1.5em;
+    font-size: 1em;
     margin: 0.5rem;
     font-weight: 400;
 }
@@ -174,6 +192,7 @@ img.h-img {
     height: auto;
     margin-bottom: 1em;
 }
+
 
 /* Styles for .MM-info and .úvodník */
 .MM-info,

@@ -1,10 +1,18 @@
-function scrollDown() {
-    window.scrollBy(0, window.innerHeight);
+// Check if the landing-page element exists
+const landingPage = document.querySelector(".landing-page");
+if (landingPage && window.scrollY === 0) {
+    // Disable scrolling
+    document.body.style.overflow = "hidden";
 }
 
-// window.addEventListener("scroll", function () {
-//     const landingPage = document.querySelector(".landing-page");
-//     if (window.scrollY > landingPage.offsetTop + landingPage.offsetHeight) {
-//         landingPage.classList.add("hidden");
-//     }
-// });
+function scrollDown() {
+    // Enable scrolling
+    document.body.style.overflow = "auto";
+    // Remove the landing-page element
+    landingPage.remove();
+}
+
+// function scrollDown() {
+//     window.scrollBy(0, window.innerHeight);
+// }
+
