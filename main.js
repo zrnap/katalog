@@ -11,8 +11,3 @@ function scrollDown() {
     // Remove the landing-page element
     landingPage.remove();
 }
-
-// function scrollDown() {
-//     window.scrollBy(0, window.innerHeight);
-// }
-

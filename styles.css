@@ -2,6 +2,7 @@
     /* backgrounds */
     --bg: #eaeaea;
     --bg2: #e8e8e8;
+    --bg3: #e6e6e6;
     /* text color */
     --dark1: #12130F;
     /* other */
@@ -29,31 +30,20 @@
     background-position: center;
     background-image: url('img/uvod01.jpg');
     background-size: cover;
-    animation: grayscale 4s ease-out, blur 4s ease-out;
-    filter: grayscale(100%) blur(2px);
+    animation: grayscale 4s ease-out;
+    filter: grayscale(100%);
     animation-fill-mode: forwards;
 }
 
 @keyframes grayscale {
     0% {
-        filter: grayscale(100%) blur(2px);
+        filter: grayscale(100%);
     }
 
     100% {
-        filter: grayscale(30%) blur(0);
+        filter: grayscale(30%);
     }
 }
-
-@keyframes blur {
-    0% {
-        filter: grayscale(100%) blur(2px);
-    }
-
-    100% {
-        filter: grayscale(30%) blur(0);
-    }
-}
-
 
 .landing-page.hidden {
     display: none;
@@ -64,26 +54,33 @@
     margin: auto;
     border-radius: 1%;
     width: 30%;
-    animation: invert 1s forwards;
+    filter: invert(100%);
+    animation: grow-shrink-invert 1s forwards;
+    animation-iteration-count: infinite;
 }
 
-@keyframes invert {
-    from {
-        filter: invert(0%);
+@keyframes grow-shrink-invert {
+    0% {
+        transform: scale(1);
+        filter: invert(100%);
     }
 
-    to {
-        filter: invert(100%);
+    50% {
+        transform: scale(1.05);
+        filter: invert(88%);
+    }
+
+    100% {
+        transform: scale(1);
+        filter: invert(10, %);
     }
 }
 
 .podpis:hover {
     height: auto;
     width: 30%;
-
-}
-
-.podpis:hover {
+    cursor: pointer;
+    filter: invert(100%);
     animation: shake 0.5s ease-in-out;
 }
 
@@ -123,7 +120,7 @@
     margin: 0.5rem;
 }
 
-/* Body Styles */
+/* BODY STYLES */
 body {
     background-color: var(--bg);
 
@@ -133,6 +130,7 @@ body {
     max-width: 980px;
     margin: auto;
     font-family: 'Sofia Sans Extra Condensed', sans-serif;
+    font-size: 1.3rem;
     font-weight: 300;
     color: var(--dark1);
     background-color: var(--bg)
@@ -194,6 +192,7 @@ img.h-img {
 }
 
 
+
 /* Styles for .MM-info and .úvodník */
 .MM-info,
 .úvodník {
@@ -227,6 +226,11 @@ img.h-img {
     background-color: var(--bg2);
     margin-top: 1rem;
     border-radius: 0.2rem;
+}
+
+.projekt:hover {
+    background-color: var(--bg3);
+
 }
 
 
